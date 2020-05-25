@@ -259,11 +259,6 @@ div.return a {
       
     }
     div.jobs .img {
-        background-color: rgba(0, 0, 0, 0.4);
-        flex-basis: 70%;
-        background-image: url(calendar1.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
         transition: 0.4s;
         box-shadow: 15px 15px 20px;
         
