@@ -91,16 +91,17 @@ div.jobs .img{
     background-repeat: no-repeat;
     background-size: cover;
 }
-div.jobs .img.first{
-    background-image: url(calendar1.jpg);
+div.jobs .img.third {
+    background-image: url(WojciechPHOTO.PNG);
   
 }
+
 div.jobs .img.second {
     background-image: url(baner1.jpg);
   
 }
-div.jobs .img.third {
-    background-image: url(WojciechPHOTO.PNG);
+div.jobs .img.first{
+    background-image: url(calendar1.jpg);
   
 }
 
