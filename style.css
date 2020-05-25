@@ -1,0 +1,672 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/tlo3.jpg);
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    background-position: right;
+}
+
+header {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px;
+
+
+}
+
+nav a {
+    margin: 5px;
+    padding: 5px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+div.welcome {
+    color: white;
+    margin: 100px 20px;
+}
+
+div.welcome h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+div.welcome h2 {
+    font-size: 1.5rem;
+    padding: 5px 10px 5px 5px;
+    background-color: rgba(0, 0, 0, 40%);
+}
+
+
+.animation .button {
+    position: absolute;
+    display: none;
+    top: 250px;
+    right: 300px;
+    font-size: 3rem;
+
+}
+
+.animation p {
+    display: none;
+    position: absolute;
+    top: 200px;
+    right: 300px;
+    color: white;
+    font-size: 2rem;
+}
+
+section.menu .aboutme {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 60%);
+    transition: .5s linear;
+}
+
+section.menu .aboutme.active {
+    left: 0;
+}
+
+section.menu .aboutme h1 {
+    font-size: 4rem;
+    color: yellow;
+    font-family: Fjalla One;
+    padding: 10px;
+
+}
+
+section.menu .aboutme p {
+    font-size: 2.2rem;
+    color: white;
+    padding: 10px;
+}
+
+.menu .switch {
+    position: absolute;
+    top: 0;
+    left: calc(100% - 2rem);
+    font-size: 2rem;
+    color: white;
+}
+
+/* .project {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 60%);
+    transition: .5s linear;
+} */
+
+/* .project.active {
+    left: 0;
+}
+
+.project h1 {
+    font-size: 4rem;
+    color: yellow;
+    font-family: Fjalla One;
+    padding: 10px;
+}
+
+.project p {
+    font-size: 2.5rem;
+    color: white;
+    padding: 10px;
+}
+
+.project .git {
+    font-size: 3rem;
+    color: white;
+    padding: 10px;
+
+}
+
+.project .git a {
+    text-decoration: none;
+    color: white;
+} */
+
+.hobby {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 60%);
+    transition: .5s linear;
+}
+
+.hobby.active {
+    left: 0;
+}
+
+.hobby h1 {
+    font-size: 4rem;
+    color: yellow;
+    font-family: Fjalla One;
+    padding: 10px;
+}
+
+.hobby ul li {
+    font-size: 2.5rem;
+    color: white;
+    padding: 10px;
+
+}
+
+.contact {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 60%);
+    transition: .5s linear;
+
+}
+
+.contact.active {
+    left: 0;
+}
+
+.contact h1 {
+    font-size: 4rem;
+    color: yellow;
+    font-family: Fjalla One;
+    padding: 10px;
+}
+
+.contact p {
+    margin: 25px 10px;
+    font-size: 2rem;
+    color: white;
+    padding: 10px;
+}
+
+.contact a {
+    display: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5vh;
+    background-color: rgba(0, 0, 0, 60%);
+    color: white;
+    text-align: center;
+    line-height: 5vh;
+    font-size: 1.5rem;
+}
+}
+
+@media (orientation: portrait) and (min-width: 411px) {
+    body {
+        background-position: center;
+    }
+
+    nav a {
+        font-size: 2.5rem;
+
+    }
+
+
+    div.welcome h1 {
+        font-size: 4rem;
+
+    }
+
+    div.welcome h2 {
+        font-size: 1.7rem;
+
+    }
+
+}
+
+@media (orientation: portrait) and (min-width: 500px) {
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        margin: 5px 10px;
+
+
+    }
+
+    nav a {
+        margin: 20px 10px;
+        font-size: 2.1rem;
+
+    }
+
+    div.welcome {
+        color: white;
+        margin: 70px 30px;
+    }
+
+    div.welcome h1 {
+        font-size: 4rem;
+        margin-bottom: 5px;
+    }
+
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        margin: 5px 10px;
+
+
+    }
+
+    nav a {
+        margin: 30px 10px;
+        font-size: 3.3rem;
+        padding: 10px;
+    }
+
+    div.welcome {
+        color: white;
+        margin: 70px 30px;
+    }
+
+    div.welcome h1 {
+        font-size: 7rem;
+        margin-bottom: 5px;
+    }
+
+    div.welcome h2 {
+        font-size: 3rem;
+    }
+
+    section.menu .aboutme h1 {
+        font-size: 7.5rem;
+        padding: 20px;
+
+    }
+
+    section.menu .aboutme p {
+        font-size: 4.5rem;
+        padding: 15px;
+    }
+
+    .project h1 {
+        font-size: 7rem;
+        padding: 20px;
+    }
+
+    .project p {
+        font-size: 4.5rem;
+        padding: 15px;
+    }
+
+    .project .git {
+        font-size: 5.5rem;
+
+
+    }
+
+    .hobby h1 {
+        font-size: 7rem;
+        padding: 20px;
+    }
+
+    .hobby ul li {
+        font-size: 4.5rem;
+        padding: 15px;
+
+    }
+
+    .contact h1 {
+        font-size: 7rem;
+        padding: 5px;
+    }
+
+    .contact p {
+        font-size: 4rem;
+        padding: 5px;
+    }
+
+}
+
+@media (orientation: portrait) and (min-width: 1024px) {
+    nav a {
+        font-size: 5rem;
+
+    }
+
+    div.welcome {
+        margin: 70px 50px;
+    }
+
+    div.welcome h1 {
+        font-size: 8rem;
+        margin-bottom: 5px;
+    }
+
+    div.welcome h2 {
+        font-size: 4rem;
+    }
+
+    section.menu .aboutme p {
+        font-size: 5rem;
+        padding: 20px;
+    }
+
+}
+
+@media(orientation: landscape) and (min-width: 812px) {
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        margin: 5px 10px;
+
+
+    }
+
+    nav a {
+        margin: 30px 10px;
+        font-size: 3.5rem;
+        padding: 10px;
+    }
+
+
+    div.welcome h1 {
+        font-size: 4rem;
+
+    }
+
+    div.welcome h2 {
+        font-size: 2rem;
+    }
+
+    section.menu .aboutme h1 {
+        font-size: 3.5rem;
+        padding: 20px;
+    }
+
+    section.menu .aboutme p {
+        font-size: 2rem;
+    }
+}
+
+
+/* @media(orientation: landsca) and (min-width:) {
+    nav a {
+        font-size: 3.5rem;
+        border: 4px solid white;
+    }
+
+
+    div.welcome h1 {
+        font-size: 5rem;
+
+    }
+
+    div.welcome h2 {
+        font-size: 3rem;
+    }
+
+    section.menu .aboutme h1 {
+        font-size: 3.5rem;
+        padding: 20px;
+    }
+
+    section.menu .aboutme p {
+        font-size: 2rem;
+    }
+} */
+
+
+
+
+/* @media(orientation: landscape) and (min-width: 1024px) {
+nav a {
+font-size: 4.5rem;
+border: 4px solid ;
+}
+
+
+div.welcome h1 {
+font-size: 9rem;
+
+}
+div.welcome h2 {
+font-size: 5rem;
+}
+}
+glowna */
+
+
+
+@media (min-width: 1024px) {
+    nav {
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-end;
+        font-family: 'Acme', sans-serif;
+    }
+
+    nav a {
+        margin: 40px;
+        padding: 10px 10px;
+        font-size: 3.5rem;
+        border: 3px solid white;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        transform: scale(1.1);
+    }
+
+    div.welcome {
+        margin: 60px 400px;
+        font-family: 'Fjalla One', sans-serif;
+    }
+
+    div.welcome h1 {
+        font-size: 7rem;
+        /* color: yellow; */
+    }
+
+    div.welcome h2 {
+        font-size: 4rem;
+    }
+
+    .animation .button {
+        display: block;
+        top: 200px;
+        right: 250px;
+        font-size: 2.2rem;
+        cursor: pointer;
+        transition: 1s;
+        padding: 30px;
+
+
+    }
+
+    .animation .button:hover {
+        font-size: 4.2rem;
+        transform: rotate(360deg);
+        color: cadetblue;
+    }
+
+    .animation p {
+        display: none;
+        top: 140px;
+        right: 300px;
+        font-size: 2.5rem;
+        font-size: Fjalla One', sans-serif; 
+
+    }
+
+    .animation p.active {
+        display: block;
+        animation: animate 7s linear infinite alternate;
+
+    }
+
+    @keyframes animate {
+        100% {
+            right: 70vw;
+        }
+    }
+
+    section.menu .aboutme {
+        left: -500px;
+        width: 500px;
+        height: 95vh;
+        background-color: rgba(0, 0, 0, 50%);
+        transition: .5s linear;
+    }
+
+    section.menu .aboutme.active {
+        left: 0;
+    }
+
+    section.menu .aboutme h1 {
+        font-size: 5rem;
+        margin: 10px 15px;
+    }
+
+    section.menu .aboutme p {
+        margin: 10px 15px;
+        font-size: 2.5rem;
+        letter-spacing: 4px;
+    }
+
+    .menu .switch {
+        left: calc(100% - 3rem);
+        font-size: 3rem;
+        cursor: pointer;
+    }
+
+    .project {
+        left: -500px;
+        width: 500px;
+        height: 95vh;
+        background-color: rgba(0, 0, 0, 50%);
+        transition: .5s linear;
+    }
+
+    .project.active {
+        left: 0;
+    }
+
+    .project h1 {
+        font-size: 5rem;
+        margin: 10px 15px;
+    }
+
+    .project p {
+        margin: 10px 15px;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+
+    }
+
+    .project .git {
+        font-size: 5rem;
+        margin: 0 20px;
+        cursor: pointer;
+    }
+
+    .hobby {
+        left: -500px;
+        width: 500px;
+        height: 95vh;
+        background-color: rgba(0, 0, 0, 50%);
+        transition: .5s linear;
+    }
+
+    .hobby.active {
+        left: 0;
+    }
+
+    .hobby h1 {
+        font-size: 5rem;
+        margin: 10px 15px;
+        transition: 0.3s linear;
+        cursor: pointer;
+    }
+
+    .hobby h1:hover {
+        transform: scale(1.1);
+        margin: 10px 40px;
+    }
+
+    .hobby ul li {
+        margin: 10px 15px;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .hobby ul li:hover {
+        transform: scale(1.1);
+    }
+
+    .contact {
+        left: -550px;
+        width: 550px;
+        height: 95vh;
+        background-color: rgba(0, 0, 0, 50%);
+        transition: .5s linear;
+    }
+
+    .contact h1 {
+        font-size: 5rem;
+        margin: 10px 15px;
+    }
+
+    .contact p {
+        margin: 20px 15px;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    .contact a {
+        display: block;
+        margin: 20px 15px;
+        font-size: 2.5rem;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    footer {
+        font-size: 2rem;
+    }
