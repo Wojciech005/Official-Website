@@ -85,13 +85,15 @@ div.jobs a.git {
     
   
 }
-div.jobs .img {
+div.jobs .img{
     background-color: rgba(0, 0, 0, 0.4);
     flex-basis: 70%;
-    background-image: url(WojciechPHOTO.PNG)'
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center; */
+}
+div.jobs .img.first{
+    background-image: url(calendar1.jpg);
+  
 }
 div.jobs .img.second {
     background-image: url(baner1.jpg);
