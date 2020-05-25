@@ -9,7 +9,7 @@ html {
 }
 body {
     background-attachment: fixed;
-    background-image: url(img/tlo3.jpg); 
+    background-image: url(tlo3.jpg); 
     width: 100%;
     background-position: right;
     background-size: cover;
@@ -93,15 +93,15 @@ div.jobs .img{
     box-shadow: 15px 15px 20px;
 }
 div.jobs .img.first{
-    background-image: url(img/calendar1.jpg);
+    background-image: url(calendar1.jpg);
   
 }
 div.jobs .img.second {
-    background-image: url(img/baner1.jpg);
+    background-image: url(baner1.jpg);
   
 }
 div.jobs .img.third {
-    background-image: url(img/WojciechPHOTO.PNG);
+    background-image: url(WojciechPHOTO.PNG);
   
 }
 
