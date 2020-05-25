@@ -162,6 +162,7 @@ section.menu .aboutme p {
     height: 100vh;
     background-color: rgba(0, 0, 0, 60%);
     transition: .5s linear;
+     list-style-type: none;
 }
 
 .hobby.active {
@@ -179,6 +180,7 @@ section.menu .aboutme p {
     font-size: 2.5rem;
     color: white;
     padding: 10px;
+     list-style-type: none;
 
 }
 
