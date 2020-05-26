@@ -74,7 +74,7 @@ div.jobs a {
     /* border: 2px solid black; */
     line-height: 150%;
     padding: 5px;
-    margin: 10px 5px;
+    margin: 15px 5px 0;
     text-align: center;
     transition: 1;
 }
@@ -82,6 +82,7 @@ div.jobs a {
 
 div.jobs a.git {
     background-color: black;
+    margin-bottom: 35px;
     
   
 }
@@ -112,7 +113,7 @@ div.jobs i {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
